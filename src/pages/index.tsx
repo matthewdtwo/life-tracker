@@ -1,7 +1,14 @@
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 
+import NoSleep from 'nosleep.js';
+
+
+
 export default function Home() {
+
+  const noSleep = new NoSleep();
+
   const [topNumber, setTopNumber] = useState(40);
   const [bottomNumber, setBottomNumber] = useState(40);
 
