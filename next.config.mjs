@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
+  distDir: "docs",
   basePath: "/life-tracker",
   images: {
     unoptimized: true,
