@@ -44,3 +44,32 @@
   padding-left: .1em;
   padding-right: .1em;
 }
+
+.commanderDamageSection {
+  background-color: black;
+  border-radius: 1rem;
+  display: flex;
+  direction: row;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  height: 10%;
+}
+
+.commanderDamageLeft, .commanderDamageRight {
+  height: 100%;
+  width: 2rem;
+  font-size: 2rem;
+  top: 50%;
+  right: 50%;
+}
+
+.commanderDamage {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 4rem;
+  padding: 1rem;
+}
