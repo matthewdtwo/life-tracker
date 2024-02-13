@@ -7,15 +7,24 @@ interface Props {
     setCommanderTax: (value: number) => void;
 }
 
-const CommanderTax = ({ commanderTax, setCommanderTax }: Props) => {
+const CommanderTax = ({ commanderTax, setCommanderTax}: Props) => {
+
+    const dealCommanderTax = (increment: boolean) => {
+        setCommanderTax(commanderTax + (increment ? 2 : -2)) // increment commander Tax
+    }
+
     return (
-        <div className={styles.commanderTaxSection}>
-            <div className={styles.commanderTaxLeft} onClick={() => {setCommanderTax(commanderTax -2)}}></div>
-            <div className={styles.commanderTax}>{commanderTax}</div>
-            <div className={styles.commanderTaxRight} onClick={() => {setCommanderTax(commanderTax +2)}}></div>
-        </div>
-    )};
+            <div className={styles.commanderTaxSection}>
+                <div className={styles.commanderTaxTitle}>Tax</div>
+
+                <div className={styles.commanderTaxDisplay}>
+                    <div className={styles.commanderTaxLeft} onClick={() => dealCommanderTax(false)}>&nbsp;</div>
+                    <div className={styles.commanderTax}>
+                        {commanderTax}
+                    </div>
+                    <div className={styles.commanderTaxRight} onClick={() => dealCommanderTax(true)}>&nbsp;</div>
+                </div>
+            </div>
+        )};
 
 export default CommanderTax;
-
-    

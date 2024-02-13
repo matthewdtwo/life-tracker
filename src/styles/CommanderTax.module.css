@@ -1,29 +1,38 @@
+
 .commanderTaxSection {
-    background-color: #444;
-    border-radius: 1rem;
-    display: flex;
-    direction: row;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 2;
-    height: 10%;
-  }
-  
-  .commanderTaxLeft, .commanderTaxRight {
-    height: 100%;
-    width: 2rem;
-    font-size: 2rem;
-    /* top: 50%;
-    right: 50%; */
-  }
-  
-  .commanderTax {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 4rem;
-    padding: 1rem;
-  }
-  
+  background-color: #444;
+  border-radius: 1rem;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  direction: column;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.commanderTaxDisplay {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.commanderTaxLeft, .commanderTaxRight {
+  flex: 1rem;
+  height: 100%;
+  font-size: 5rem;
+  top: 50%;
+  width: 50%;
+}
+
+.commanderTax {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 4rem;
+  padding: 1rem;
+}

@@ -1,0 +1,11 @@
+.tracker {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+}
+
+.trackerInverted {
+    height: 50vh;
+    transform: rotate(180deg);
+    position: relative;
+}
