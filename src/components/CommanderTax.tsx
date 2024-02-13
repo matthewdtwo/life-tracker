@@ -17,13 +17,12 @@ const CommanderTax = ({ commanderTax, setCommanderTax}: Props) => {
             <div className={styles.commanderTaxSection}>
                 <div className={styles.commanderTaxTitle}>Tax</div>
 
-                <div className={styles.commanderTaxDisplay}>
-                    <div className={styles.commanderTaxLeft} onClick={() => dealCommanderTax(false)}>&nbsp;</div>
-                    <div className={styles.commanderTax}>
-                        {commanderTax}
-                    </div>
-                    <div className={styles.commanderTaxRight} onClick={() => dealCommanderTax(true)}>&nbsp;</div>
+                <div>
+                    <div className={styles.commanderTaxLeft} onClick={() => dealCommanderTax(false)}></div>
+                    <div className={styles.commanderTaxRight} onClick={() => dealCommanderTax(true)}></div>
                 </div>
+
+                <div className={styles.commanderTax}>{commanderTax}</div>
             </div>
         )};
 

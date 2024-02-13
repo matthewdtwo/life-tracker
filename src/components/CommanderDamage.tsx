@@ -20,13 +20,11 @@ const CommanderDamage = ({ commanderDamage, setCommanderDamage, lifeTotal, setLi
             <div className={styles.commanderDamageSection}>
                 <div className={styles.commanderDamageTitle}>Damage</div>
 
-                <div className={styles.commanderDamageDisplay}>
-                    <div className={styles.commanderDamageLeft} onClick={() => dealCommanderDamage(false)}>&nbsp;</div>
-                    <div className={styles.commanderDamage}>
-                        {commanderDamage}
-                    </div>
-                    <div className={styles.commanderDamageRight} onClick={() => dealCommanderDamage(true)}>&nbsp;</div>
+                <div>
+                    <div className={styles.commanderDamageLeft} onClick={() => dealCommanderDamage(false)}></div>
+                    <div className={styles.commanderDamageRight} onClick={() => dealCommanderDamage(true)}></div>
                 </div>
+                <div className={styles.commanderDamage}>{commanderDamage}</div>
             </div>
         )};
 
