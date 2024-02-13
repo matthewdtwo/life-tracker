@@ -12,7 +12,8 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-        <CommanderDamage commanderDamage={commanderDamage} setCommanderDamage={setCommanderDamage} />
+        <CommanderDamage commanderDamage={commanderDamage} setCommanderDamage={setCommanderDamage} 
+        lifeTotal = {lifeTotal} setLifeTotal={setLifeTotal}/>
         <LifeTotal lifeTotal={lifeTotal} setLifeTotal={setLifeTotal}/>
         <CommanderTax commanderTax={commanderTax} setCommanderTax={setCommanderTax} />
     </div>
