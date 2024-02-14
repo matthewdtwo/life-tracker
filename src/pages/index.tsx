@@ -1,5 +1,5 @@
-import styles from '../styles/Home.module.css';
-import { Tracker } from '@/components/Tracker';
+import styles from '../styles/Main.module.css';
+import { Tracker } from '@/components/Tracker/Tracker';
 
 export default function Home() {
 

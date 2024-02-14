@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../styles/CommanderTax.module.css';
+import styles from './CommanderTax.module.css';
 
 interface Props {
     commanderTax: number;

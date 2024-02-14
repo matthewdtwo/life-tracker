@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import CommanderDamage from "./CommanderDamage";
-import LifeTotal from "./LifeTotal";
-import CommanderTax from "./CommanderTax";
+import CommanderDamage from "../CommanderDamage/CommanderDamage";
+import LifeTotal from "../LifeTotal/LifeTotal";
+import CommanderTax from "../CommanderTax/CommanderTax";
 
-import styles from "../styles/Tracker.module.css"
+import styles from "./Tracker.module.css"
 
 interface Props {
     inverted: boolean; 
