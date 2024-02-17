@@ -13,11 +13,7 @@ const LifeTotal = ({ lifeTotal, setLifeTotal }: Props) => {
     const [numClicks, setNumClicks] = useState(0);
     const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-    var noSleep = new NoSleep();
-
-
-    const handleIncrement = () => {
-        noSleep.enable();        
+    const handleIncrement = () => {    
         setLifeTotal(lifeTotal + 1);
         setNumClicks(numClicks + 1);
         startTimer();
