@@ -5,11 +5,28 @@ import { Tracker } from '@/components/Tracker/Tracker';
 export default function Home() {
 
   useEffect(() => {
-    navigator.wakeLock.request('screen').then(() => {
-      console.log('Screen is locked');
-    }).catch((err) => {
-      console.log('Error: ', err);
-    });
+    let wakeLock: WakeLockSentinel | null = null;
+  
+    const requestWakeLock = async () => {
+      try {
+        wakeLock = await navigator.wakeLock.request('screen');
+        console.log('Screen Wake Lock is active');
+      } catch (err) {
+        console.log('Screen Wake Lock error: ', err);
+      }
+    };
+  
+    requestWakeLock();
+  
+    return () => {
+      if (wakeLock !== null) {
+        wakeLock.release()
+          .then(() => {
+            console.log('Screen Wake Lock was released');
+            wakeLock = null;
+          });
+      }
+    };
   }, []);
   
   return (
