@@ -3,7 +3,7 @@
   background-color: #444;
   border-radius: 1rem;
   top: 1rem;
-  right: 2rem;
+  right: 1rem;
   z-index: 2;
   display: flex;
   position: absolute;
@@ -32,6 +32,7 @@
 .commanderDamageLeft {
   /* border-top-left-radius: 1rem; */
   left: 0;
+  padding-right: 1rem;
 }
 
 .commanderDamage {
