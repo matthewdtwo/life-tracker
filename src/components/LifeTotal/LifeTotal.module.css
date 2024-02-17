@@ -47,3 +47,19 @@
     padding-right: 1rem;
     margin-bottom: 1rem;
   }
+
+  .hoverNumber {
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    
+    z-index: 3;
+    position: absolute;
+    top: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+
+
+  }
